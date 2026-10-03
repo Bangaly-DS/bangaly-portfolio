@@ -1,0 +1,1443 @@
+.projectPage {
+  min-height: 100vh;
+  padding: 0 5vw;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.projectNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0;
+}
+
+.projectBrand {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.backLink {
+  font-size: 12px;
+  opacity: 0.55;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.projectHero {
+  padding: 130px 0 100px;
+}
+
+.projectHeroMeta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 55px;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  opacity: 0.5;
+}
+
+.projectHero h1 {
+  max-width: 1100px;
+  margin: 0;
+  font-size: clamp(60px, 9vw, 135px);
+  line-height: 0.9;
+  font-weight: 500;
+  letter-spacing: -0.055em;
+}
+
+.projectDescription {
+  max-width: 620px;
+  margin-top: 45px;
+  font-size: 19px;
+  line-height: 1.65;
+  opacity: 0.6;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.projectStats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid rgba(128, 128, 128, 0.25);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px 20px 24px 0;
+  border-right: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+.stat:not(:first-child) {
+  padding-left: 22px;
+}
+
+.stat:last-child {
+  border-right: none;
+}
+
+.stat span {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  opacity: 0.45;
+}
+
+.stat strong {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+/* =========================
+   STANDARD SECTIONS
+========================= */
+
+.projectSection {
+  display: grid;
+  grid-template-columns: 0.4fr 1.6fr;
+  gap: 90px;
+  padding: 115px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.projectSectionLabel {
+  display: flex;
+  justify-content: space-between;
+  align-self: start;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  opacity: 0.45;
+}
+
+.projectSectionContent {
+  width: 100%;
+  max-width: none;
+}
+
+.projectSectionContent h2,
+.visualContent h2 {
+  margin: 0 0 35px;
+  font-size: clamp(34px, 4.5vw, 58px);
+  line-height: 0.98;
+  font-weight: 400;
+  letter-spacing: -0.045em;
+}
+
+.projectSectionContent > p,
+.visualContent > p {
+  max-width: 760px;
+  font-size: 17px;
+  line-height: 1.75;
+  opacity: 0.62;
+}
+
+/* =========================
+   PIPELINE
+========================= */
+
+.pipeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  margin-top: 60px;
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.pipeline > div {
+  min-height: 155px;
+  padding: 22px 18px 22px 0;
+  border-right: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.pipeline > div:not(:first-child) {
+  padding-left: 18px;
+}
+
+.pipeline > div:last-child {
+  border-right: none;
+}
+
+.pipeline span {
+  display: block;
+  margin-bottom: 28px;
+  font-size: 9px;
+  opacity: 0.4;
+}
+
+.pipeline strong {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+.pipeline p {
+  font-size: 11px;
+  line-height: 1.55;
+  opacity: 0.5;
+}
+
+/* =========================
+   VISUAL SECTION
+========================= */
+
+.visualSection {
+  padding: 125px 0 135px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.visualSection > .projectSectionLabel {
+  margin-bottom: 70px;
+}
+
+.visualContent {
+  width: 100%;
+}
+
+.visualContent h2 {
+  max-width: 850px;
+  margin-bottom: 35px;
+}
+
+.visualContent > p {
+  max-width: 650px;
+}
+
+.chartFrame {
+  width: 100%;
+  margin-top: 75px;
+  padding: 0;
+  border: none;
+}
+
+.chartFrame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.chartCaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 18px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  opacity: 0.45;
+}
+
+/* =========================
+   SEGMENTS
+========================= */
+
+.segmentGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  margin-top: 60px;
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.segmentGrid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-height: 125px;
+  padding: 22px 20px 22px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.segmentGrid > div:nth-child(even) {
+  padding-left: 22px;
+  border-left: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.segmentGrid span {
+  font-size: 9px;
+  opacity: 0.4;
+}
+
+.segmentGrid strong {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.segmentGrid p {
+  font-size: 11px;
+  opacity: 0.45;
+}
+
+/* =========================
+   RESULT METRICS
+========================= */
+
+.resultMetrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 60px;
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.resultMetrics > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 25px 20px 25px 0;
+  border-right: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.resultMetrics > div:not(:first-child) {
+  padding-left: 20px;
+}
+
+.resultMetrics > div:last-child {
+  border-right: none;
+}
+
+.resultMetrics span {
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  opacity: 0.45;
+}
+
+.resultMetrics strong {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* =========================
+   ARTIFACTS
+========================= */
+
+.artifactGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 60px;
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.artifactGrid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 22px 20px 22px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.artifactGrid > div:nth-child(even) {
+  padding-left: 20px;
+  border-left: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.artifactGrid span {
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  opacity: 0.45;
+}
+
+.artifactGrid strong {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* =========================
+   BOTTOM
+========================= */
+
+.projectStack {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 50px;
+  padding: 80px 0;
+}
+
+.stackLabel {
+  margin-bottom: 12px;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  opacity: 0.45;
+}
+
+.projectStack > div:first-child > p:last-child {
+  font-size: 13px;
+  line-height: 1.7;
+  opacity: 0.55;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 28px;
+  font-size: 12px;
+}
+
+.projectLinks a {
+  padding-bottom: 5px;
+  border-bottom: 1px solid currentColor;
+}
+
+.projectFooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 0 35px;
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  opacity: 0.45;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+ .projectHero {
+    width: 100%;
+    padding: 130px 0 100px;
+  }
+
+  .projectStats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat:nth-child(2) {
+    border-right: none;
+  }
+
+  .stat:nth-child(3),
+  .stat:nth-child(4) {
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+  }
+
+  .projectSection {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 90px 0;
+  }
+
+  .visualSection {
+    padding: 90px 0;
+  }
+
+  .pipeline {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pipeline > div:nth-child(2) {
+    border-right: none;
+  }
+
+  .pipeline > div:nth-child(3),
+  .pipeline > div:nth-child(4) {
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+  }
+
+  .resultMetrics {
+    grid-template-columns: 1fr;
+  }
+
+  .resultMetrics > div {
+    border-right: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  }
+
+  .resultMetrics > div:not(:first-child) {
+    padding-left: 0;
+  }
+
+  .resultMetrics > div:last-child {
+    border-bottom: none;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .projectPage {
+    padding: 0 20px;
+  }
+
+  .projectHero {
+    padding: 75px 0 65px;
+  }
+
+  .projectHeroMeta {
+    margin-bottom: 40px;
+  }
+
+  .projectHero h1 {
+    max-width: 1250px;
+  }
+
+  .projectDescription {
+    margin-top: 35px;
+    font-size: 16px;
+  }
+
+  .projectStats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat {
+    padding: 20px 10px 20px 0;
+  }
+
+  .stat:not(:first-child) {
+    padding-left: 14px;
+  }
+
+  .projectSection {
+    padding: 75px 0;
+  }
+
+  .projectSectionContent h2,
+  .visualContent h2 {
+    font-size: 37px;
+    margin-bottom: 28px;
+  }
+
+  .projectSectionContent > p,
+  .visualContent > p {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .pipeline {
+    grid-template-columns: 1fr;
+  }
+
+  .pipeline > div,
+  .pipeline > div:not(:first-child) {
+    padding-left: 0;
+    border-right: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  }
+
+  .pipeline > div:last-child {
+    border-bottom: none;
+  }
+
+  .segmentGrid,
+  .artifactGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .segmentGrid > div:nth-child(even),
+  .artifactGrid > div:nth-child(even) {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .chartFrame {
+    margin-top: 45px;
+    padding: 8px;
+  }
+
+  .projectStack {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 65px 0;
+  }
+
+  .projectLinks {
+    flex-wrap: wrap;
+  }
+
+  .projectFooter {
+    gap: 25px;
+  }
+
+  .visualSection {
+    padding: 80px 0 90px;
+  }
+
+  .visualSection > .projectSectionLabel {
+    margin-bottom: 45px;
+  }
+
+  .chartFrame {
+    margin-top: 45px;
+  }  
+
+  .chartCaption {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* =========================
+   FRAUD DETECTION
+========================= */
+
+.fraudNumbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  margin-top: 60px;
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.fraudNumbers > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 25px 20px 25px 0;
+  border-right: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.fraudNumbers > div:not(:first-child) {
+  padding-left: 20px;
+}
+
+.fraudNumbers > div:last-child {
+  border-right: none;
+}
+
+.fraudNumbers span,
+.fraudMetrics span {
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  opacity: 0.45;
+}
+
+.fraudNumbers strong {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.challengeNumbers strong {
+  font-size: 18px;
+}
+
+
+/* =========================
+   FRAUD PIPELINE
+========================= */
+
+.fraudPipeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  margin-top: 60px;
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.fraudPipeline > div {
+  min-height: 155px;
+  padding: 22px 18px 22px 0;
+  border-right: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.fraudPipeline > div:not(:first-child) {
+  padding-left: 18px;
+}
+
+.fraudPipeline > div:last-child {
+  border-right: none;
+}
+
+.fraudPipeline span {
+  display: block;
+  margin-bottom: 28px;
+  font-size: 9px;
+  opacity: 0.4;
+}
+
+.fraudPipeline strong {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+.fraudPipeline p {
+  font-size: 11px;
+  line-height: 1.55;
+  opacity: 0.5;
+}
+
+
+/* =========================
+   FRAUD VISUALS
+========================= */
+
+.fraudVisual {
+  padding-top: 125px;
+  padding-bottom: 135px;
+}
+
+.fraudVisual .chartFrame {
+  max-width: 100%;
+}
+
+
+/* =========================
+   FRAUD METRICS
+========================= */
+
+.fraudMetrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  margin-top: 60px;
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.fraudMetrics > div {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 25px 20px 25px 0;
+  border-right: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.fraudMetrics > div:not(:first-child) {
+  padding-left: 20px;
+}
+
+.fraudMetrics > div:last-child {
+  border-right: none;
+}
+
+.fraudMetrics strong {
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+
+
+/* =========================
+   FRAUD RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .fraudPipeline {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fraudPipeline > div:nth-child(2) {
+    border-right: none;
+  }
+
+  .fraudPipeline > div:nth-child(3),
+  .fraudPipeline > div:nth-child(4) {
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+  }
+
+  .fraudMetrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fraudMetrics > div:nth-child(2) {
+    border-right: none;
+  }
+
+  .fraudMetrics > div:nth-child(3),
+  .fraudMetrics > div:nth-child(4) {
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+  }
+}
+
+@media (max-width: 600px) {
+  .fraudNumbers {
+    grid-template-columns: 1fr;
+  }
+
+  .fraudNumbers > div,
+  .fraudNumbers > div:not(:first-child) {
+    padding-left: 0;
+    border-right: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  }
+
+  .fraudNumbers > div:last-child {
+    border-bottom: none;
+  }
+
+  .fraudPipeline {
+    grid-template-columns: 1fr;
+  }
+
+  .fraudPipeline > div,
+  .fraudPipeline > div:not(:first-child) {
+    padding-left: 0;
+    border-right: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  }
+
+  .fraudPipeline > div:last-child {
+    border-bottom: none;
+  }
+
+  .fraudMetrics {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fraudMetrics > div {
+    padding: 20px 10px 20px 0;
+  }
+
+  .fraudMetrics > div:not(:first-child) {
+    padding-left: 14px;
+  }
+
+  .fraudMetrics strong {
+    font-size: 27px;
+  }
+
+  .fraudVisual {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+}
+
+/* =========================
+   DELHI AIR QUALITY
+========================= */
+
+.aqiNumbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  margin-top: 60px;
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.aqiNumbers > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 25px 20px 25px 0;
+  border-right: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.aqiNumbers > div:not(:first-child) {
+  padding-left: 20px;
+}
+
+.aqiNumbers > div:last-child {
+  border-right: none;
+}
+
+.aqiNumbers span,
+.aqiDataGrid span,
+.aqiResultGrid span {
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  opacity: 0.45;
+}
+
+.aqiNumbers strong {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+
+/* =========================
+   AQI DATA GRID
+========================= */
+
+.aqiDataGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  margin-top: 60px;
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.aqiDataGrid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 25px 18px 25px 0;
+  border-right: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.aqiDataGrid > div:not(:first-child) {
+  padding-left: 18px;
+}
+
+.aqiDataGrid > div:last-child {
+  border-right: none;
+}
+
+.aqiDataGrid strong {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+/* =========================
+   AQI VISUALS
+========================= */
+
+.aqiVisual {
+  padding-top: 125px;
+  padding-bottom: 135px;
+}
+
+.aqiVisual .chartFrame {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+/* =========================
+   AQI MODEL PIPELINE
+========================= */
+
+.aqiPipeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  margin-top: 60px;
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.aqiPipeline > div {
+  min-height: 155px;
+  padding: 22px 18px 22px 0;
+  border-right: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.aqiPipeline > div:not(:first-child) {
+  padding-left: 18px;
+}
+
+.aqiPipeline > div:last-child {
+  border-right: none;
+}
+
+.aqiPipeline span {
+  display: block;
+  margin-bottom: 28px;
+  font-size: 9px;
+  opacity: 0.4;
+}
+
+.aqiPipeline strong {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+.aqiPipeline p {
+  font-size: 11px;
+  line-height: 1.55;
+  opacity: 0.5;
+}
+
+
+/* =========================
+   AQI RESULT
+========================= */
+
+.aqiResultGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  margin-top: 60px;
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.aqiResultGrid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 145px;
+  padding: 24px 20px 24px 0;
+  border-right: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.aqiResultGrid > div:not(:first-child) {
+  padding-left: 20px;
+}
+
+.aqiResultGrid > div:last-child {
+  border-right: none;
+}
+
+.aqiResultGrid strong {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.aqiResultGrid p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.5;
+  opacity: 0.5;
+}
+
+
+/* =========================
+   AQI RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .aqiDataGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .aqiDataGrid > div:nth-child(2) {
+    border-right: none;
+  }
+
+  .aqiDataGrid > div:nth-child(3),
+  .aqiDataGrid > div:nth-child(4) {
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+  }
+
+  .aqiPipeline {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .aqiPipeline > div:nth-child(2) {
+    border-right: none;
+  }
+
+  .aqiPipeline > div:nth-child(3),
+  .aqiPipeline > div:nth-child(4) {
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+  }
+
+  .aqiResultGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .aqiResultGrid > div {
+    border-right: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  }
+
+  .aqiResultGrid > div:not(:first-child) {
+    padding-left: 0;
+  }
+
+  .aqiResultGrid > div:last-child {
+    border-bottom: none;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .aqiNumbers {
+    grid-template-columns: 1fr;
+  }
+
+  .aqiNumbers > div,
+  .aqiNumbers > div:not(:first-child) {
+    padding-left: 0;
+    border-right: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  }
+
+  .aqiNumbers > div:last-child {
+    border-bottom: none;
+  }
+
+  .aqiDataGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .aqiDataGrid > div,
+  .aqiDataGrid > div:not(:first-child) {
+    padding-left: 0;
+    border-right: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  }
+
+  .aqiDataGrid > div:last-child {
+    border-bottom: none;
+  }
+
+  .aqiPipeline {
+    grid-template-columns: 1fr;
+  }
+
+  .aqiPipeline > div,
+  .aqiPipeline > div:not(:first-child) {
+    padding-left: 0;
+    border-right: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  }
+
+  .aqiPipeline > div:last-child {
+    border-bottom: none;
+  }
+
+  .aqiVisual {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+
+  /* =========================
+   BRAIN WEIGHT PREDICTION
+========================= */
+
+.brainNumbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  margin-top: 60px;
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.brainNumbers > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 25px 20px 25px 0;
+  border-right: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.brainNumbers > div:not(:first-child) {
+  padding-left: 20px;
+}
+
+.brainNumbers > div:last-child {
+  border-right: none;
+}
+
+.brainNumbers span,
+.brainMetrics span {
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  opacity: 0.45;
+}
+
+.brainNumbers strong {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/* =========================
+   BRAIN WEIGHT PIPELINE
+========================= */
+
+.brainPipeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  margin-top: 60px;
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.brainPipeline > div {
+  min-height: 155px;
+  padding: 22px 18px 22px 0;
+  border-right: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.brainPipeline > div:not(:first-child) {
+  padding-left: 18px;
+}
+
+.brainPipeline > div:last-child {
+  border-right: none;
+}
+
+.brainPipeline span {
+  display: block;
+  margin-bottom: 28px;
+  font-size: 9px;
+  opacity: 0.4;
+}
+
+.brainPipeline strong {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+.brainPipeline p {
+  font-size: 11px;
+  line-height: 1.55;
+  opacity: 0.5;
+}
+
+/* =========================
+   BRAIN WEIGHT VISUALS
+========================= */
+
+.brainVisual {
+  padding-top: 125px;
+  padding-bottom: 135px;
+}
+
+.brainVisual .chartFrame {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* =========================
+   BRAIN WEIGHT RESULTS
+========================= */
+
+.brainMetrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  margin-top: 60px;
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.brainMetrics > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 25px 20px 25px 0;
+  border-right: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.brainMetrics > div:not(:first-child) {
+  padding-left: 20px;
+}
+
+.brainMetrics > div:last-child {
+  border-right: none;
+}
+
+.brainMetrics strong {
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+/* =========================================================
+   BRAIN WEIGHT PREDICTION
+   ========================================================= */
+
+.brainNumbers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 4rem;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brainNumbers > div {
+  min-height: 150px;
+  padding: 2rem 1.5rem;
+  border-right: 1px solid var(--line);
+}
+
+.brainNumbers > div:last-child {
+  border-right: none;
+}
+
+.brainNumbers strong {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.brainNumbers span {
+  display: block;
+  font-size: 0.68rem;
+  line-height: 1.4;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+
+/* =========================================================
+   CASE STUDY TEXT
+   ========================================================= */
+
+.brainPipeline {
+  margin-top: 6rem;
+}
+
+.brainPipeline > div {
+  padding: 0 0 5rem;
+  margin-bottom: 5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.brainPipeline > div:last-child {
+  margin-bottom: 0;
+}
+
+.brainPipeline h3 {
+  margin: 0 0 1.75rem;
+  font-size: 0.68rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.brainPipeline p {
+  max-width: 900px;
+  margin: 0;
+  font-size: clamp(1.15rem, 1.45vw, 1.45rem);
+  line-height: 1.75;
+  letter-spacing: -0.018em;
+}
+
+
+/* =========================================================
+   REGRESSION VISUAL
+   ========================================================= */
+
+.brainVisual {
+  margin-top: 6rem;
+}
+
+.brainVisual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+}
+
+.brainVisual figcaption {
+  max-width: 700px;
+  margin-top: 1rem;
+  font-size: 0.68rem;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+
+/* =========================================================
+   RESULTS / METRICS
+   ========================================================= */
+
+.brainMetrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 4rem;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brainMetrics > div {
+  min-height: 150px;
+  padding: 2rem 1.5rem;
+  border-right: 1px solid var(--line);
+}
+
+.brainMetrics > div:last-child {
+  border-right: none;
+}
+
+.brainMetrics strong {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.brainMetrics span {
+  display: block;
+  font-size: 0.68rem;
+  line-height: 1.4;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .brainNumbers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .brainNumbers > div:nth-child(2) {
+    border-right: none;
+  }
+
+  .brainNumbers > div:nth-child(-n + 2) {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .brainPipeline {
+    margin-top: 5rem;
+  }
+
+  .brainMetrics {
+    grid-template-columns: 1fr;
+  }
+
+  .brainMetrics > div {
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .brainMetrics > div:last-child {
+    border-bottom: none;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .brainNumbers {
+    grid-template-columns: 1fr;
+  }
+
+  .brainNumbers > div {
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .brainNumbers > div:last-child {
+    border-bottom: none;
+  }
+
+  .brainPipeline {
+    margin-top: 4rem;
+  }
+
+  .brainPipeline > div {
+    padding-bottom: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .brainPipeline p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  .brainMetrics {
+    margin-top: 3rem;
+  }
+}
+}
+
