@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./page.module.css";
 
 const projects = [
@@ -209,6 +210,18 @@ export default function Home() {
 
         <div className={styles.aboutContent}>
           <div className={styles.aboutIntro}>
+            <div className={styles.aboutImageWrap}>
+              <Image
+                src="/images/Profile.jpeg"
+                alt="Portrait of Bangaly Sano"
+                width={640}
+                height={960}
+                className={styles.aboutImage}
+                sizes="(max-width: 760px) 100vw, 40vw"
+                priority={false}
+              />
+            </div>
+
             <h2>
               Curious by
               <br />
@@ -221,26 +234,30 @@ export default function Home() {
 
             <div className={styles.aboutIdentity}>
               <span>BANGALY SANO</span>
-              <p>Data Scientist · AI & Machine Learning</p>
+              <p>Data Scientist · AI &amp; Machine Learning</p>
             </div>
           </div>
 
           <div className={styles.aboutText}>
             <p>
-              I am a data science and technology practitioner with a
-              background in biology and an ongoing interest in how intelligent
-              systems can solve meaningful problems.
+              I&apos;m Bangaly Sano, a data science and technology
+              practitioner with a background in biology and a growing focus on
+              software engineering and health technology.
             </p>
+
             <p>
-              I work across data analysis, machine learning, predictive
-              modelling, and software development. I am particularly interested
-              in connecting these disciplines to practical challenges in
-              healthcare and the wider African technology ecosystem.
+              My journey has taken me from understanding living systems to
+              exploring how data and intelligent systems can solve real-world
+              problems. I work across data analysis, machine learning,
+              predictive modelling, and software development, with a particular
+              interest in healthcare and the wider African technology
+              ecosystem.
             </p>
+
             <p>
-              I do not see the work as a collection of finished projects.
-              Each project is part of a longer process of learning, testing,
-              refining, and building with greater purpose.
+              I see every project as part of a longer process of learning,
+              testing, refining, and building technology that is not only
+              intelligent, but genuinely useful.
             </p>
 
             <div className={styles.aboutNow}>
@@ -268,15 +285,15 @@ export default function Home() {
 
         <div className={styles.gueritechContent}>
           <div className={styles.gueritechIntro}>
-            <p className={styles.eyebrow}>BEYOND INDIVIDUAL PROJECTS</p>
-            <h2>
-              From building
-              <br />
-              models to building
-              <br />
-              systems.
-            </h2>
-          </div>
+          <p className={styles.eyebrow}>BEYOND INDIVIDUAL PROJECTS</p>
+          <h2>
+            From building
+            <br />
+            models to building
+            <br />
+            systems.
+          </h2>
+        </div>
 
           <div className={styles.gueritechText}>
             <p>
@@ -365,8 +382,13 @@ export default function Home() {
       <footer className={styles.footer}>
         <span>© {new Date().getFullYear()} BANGALY SANO</span>
         <span>DATA · INTELLIGENCE · TECHNOLOGY · HEALTH</span>
-        <a href="#top">
-          BACK TO TOP ↑
+        <a
+          href="#top"
+          className={styles.backToTop}
+          aria-label="Back to top"
+          title="Back to top"
+        >
+          ↑
         </a>
       </footer>
     </main>
