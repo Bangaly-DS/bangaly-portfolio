@@ -1,512 +1,373 @@
-// app/gueritech/page.tsx
-
 import Link from "next/link";
 import styles from "./page.module.css";
 
-export default function GueriTechPage() {
+const projects = [
+  {
+    number: "01",
+    title: "Customer Segmentation",
+    category: "MACHINE LEARNING",
+    description:
+      "Finding meaningful customer groups through behavioural data and unsupervised learning.",
+    href: "/work/customer-segmentation",
+  },
+  {
+    number: "02",
+    title: "Fraud Detection",
+    category: "DATA SCIENCE",
+    description:
+      "Exploring imbalanced transaction data and evaluating machine learning models for fraud detection.",
+    href: "/work/fraud-detection",
+  },
+  {
+    number: "03",
+    title: "Delhi Air Quality Forecasting",
+    category: "TIME SERIES",
+    description:
+      "Forecasting air quality using historical pollution data and predictive modelling.",
+    href: "/work/delhi-air-quality",
+  },
+  {
+    number: "04",
+    title: "Brain Weight Prediction",
+    category: "REGRESSION",
+    description:
+      "Investigating the relationship between head size and brain weight through statistical modelling.",
+    href: "/work/brain-weight-prediction",
+  },
+];
+
+export default function Home() {
   return (
-    <main className={styles.page}>
-      {/* NAVIGATION */}
+    <main id="top" className={styles.page}>
       <nav className={styles.nav}>
         <Link href="/" className={styles.brand}>
-          GUERITECH
+          BANGALY SANO
         </Link>
 
         <div className={styles.navLinks}>
-          <a href="#vision">Vision</a>
-          <a href="#platform">Platform</a>
-          <a href="#products">Products</a>
-          <a href="#intelligence">Intelligence</a>
-          <a href="#operations">Operations</a>
-          <a href="#ecosystem">Ecosystem</a>
+          <a href="#work">Work</a>
+          <a href="#journey">Journey</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </div>
-
-        <Link href="/" className={styles.back}>
-          ← Portfolio
-        </Link>
       </nav>
 
-      {/* HERO */}
-      <section id="vision" className={styles.hero}>
-        <div className={styles.heroMeta}>
-          <span>GUERITECH</span>
-          <span>HEALTH · INTELLIGENCE · SYSTEMS</span>
+      <section className={styles.hero}>
+        <div className={styles.heroIntro}>
+          <span>DATA · INTELLIGENCE · TECHNOLOGY · HEALTH</span>
+          <span>INDEPENDENT THINKING. CONTINUOUS BUILDING.</span>
         </div>
 
-        <div className={styles.heroMain}>
+        <div className={styles.heroStatement}>
           <p className={styles.eyebrow}>
-            ENGINEERING A HEALTHIER FUTURE
+            DATA SCIENCE / MACHINE LEARNING / SOFTWARE
           </p>
-
           <h1>
-            Technology
+            Building
             <br />
-            for healthier
+            toward what
             <br />
-            systems.
+            comes next.
           </h1>
         </div>
 
         <div className={styles.heroBottom}>
-          <p>
-            Building intelligent infrastructure at the intersection of
-            healthcare, software, data, and artificial intelligence.
-          </p>
-
-          <span>01 / 06</span>
+          <span>Based in Nigeria. Building for what comes next.</span>
+          <a href="#journey" className={styles.explore}>
+            Explore the journey
+            <span className={styles.arrow}>↘</span>
+          </a>
         </div>
       </section>
 
-      {/* VISION */}
-      <section className={styles.statement}>
+      <section id="journey" className={styles.journey}>
         <div className={styles.sectionLabel}>
-          <span>01</span>
-          <span>THE VISION</span>
+          <span>01 / JOURNEY</span>
+          <span>THE PATH SO FAR</span>
         </div>
 
-        <div className={styles.statementContent}>
-          <p className={styles.eyebrow}>WHY GUERITECH</p>
-
-          <h2>
-            Healthcare should not
-            <br />
-            operate as isolated systems.
-          </h2>
-
-          <p>
-            GueriTech explores a connected approach to healthcare technology —
-            bringing data, software, intelligence, clinical workflows, and
-            people into systems that can work together.
-          </p>
-        </div>
-      </section>
-
-      {/* CORE PLATFORM */}
-      <section id="platform" className={styles.platform}>
-        <div className={styles.sectionLabel}>
-          <span>02</span>
-          <span>CORE PLATFORM</span>
-        </div>
-
-        <div className={styles.platformIntro}>
-          <div>
-            <p className={styles.eyebrow}>THE FOUNDATION</p>
-
+        <div className={styles.journeyContent}>
+          <div className={styles.journeyIntro}>
             <h2>
-              One platform.
+              Different fields.
               <br />
-              Multiple systems.
+              One direction.
             </h2>
           </div>
 
-          <p>
-            The GueriTech platform is envisioned as the infrastructure layer
-            beneath its healthcare products — providing identity, data,
-            interoperability, security, intelligence, and shared services.
-          </p>
-        </div>
-
-        <div className={styles.architecture}>
-          <div className={styles.architectureCore}>
-            <span>CORE</span>
-            <strong>GUERITECH PLATFORM</strong>
+          <div className={styles.journeyText}>
             <p>
-              Shared infrastructure connecting applications, intelligence,
-              operations, and healthcare data.
+              My journey started with biology and grew into data science,
+              machine learning, software engineering, and intelligent systems.
+            </p>
+            <p>
+              Each step has changed how I approach problems: observe carefully,
+              question assumptions, work with evidence, and build solutions
+              that have a reason to exist.
             </p>
           </div>
-
-          <div className={styles.architectureGrid}>
-            <div>
-              <span>01</span>
-              <strong>Identity</strong>
-              <p>Authentication, roles, organizations, and access control.</p>
-            </div>
-
-            <div>
-              <span>02</span>
-              <strong>Data</strong>
-              <p>Structured health, operational, and organizational data.</p>
-            </div>
-
-            <div>
-              <span>03</span>
-              <strong>Interoperability</strong>
-              <p>Connecting systems, services, facilities, and workflows.</p>
-            </div>
-
-            <div>
-              <span>04</span>
-              <strong>Security</strong>
-              <p>Privacy, consent, auditability, and secure infrastructure.</p>
-            </div>
-
-            <div>
-              <span>05</span>
-              <strong>Intelligence</strong>
-              <p>Models, analytics, prediction, and decision support.</p>
-            </div>
-
-            <div>
-              <span>06</span>
-              <strong>Infrastructure</strong>
-              <p>Cloud services, APIs, monitoring, and platform reliability.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* PRODUCTS */}
-      <section id="products" className={styles.productsSection}>
-        <div className={styles.sectionLabel}>
-          <span>03</span>
-          <span>PRODUCT ECOSYSTEM</span>
         </div>
 
-        <div className={styles.productsIntro}>
-          <p className={styles.eyebrow}>BUILT ON THE PLATFORM</p>
-
-          <h2>
-            Different products.
-            <br />
-            Shared intelligence.
-          </h2>
-
-          <p>
-            Each product addresses a different part of the healthcare
-            ecosystem while sharing the same underlying platform philosophy.
-          </p>
-        </div>
-
-        <div id="products" className={styles.products}>
-          <div>
+        <div className={styles.trajectory}>
+          <div className={styles.trajectoryItem}>
             <span>01</span>
-            <strong>RehabOS</strong>
-            <p>
-              Digital infrastructure for rehabilitation workflows,
-              patient progress, care plans, and clinical coordination.
-            </p>
-            <small>FLAGSHIP · REHABILITATION</small>
+            <strong>Biology</strong>
+            <p>Understanding living systems.</p>
           </div>
-
-          <div>
+          <span className={styles.trajectoryArrow}>→</span>
+          <div className={styles.trajectoryItem}>
             <span>02</span>
-            <strong>ClinicOS</strong>
-            <p>
-              Operational infrastructure for clinics, patient management,
-              workflows, records, and everyday healthcare operations.
-            </p>
-            <small>CLINICAL OPERATIONS</small>
+            <strong>Data</strong>
+            <p>Finding patterns in evidence.</p>
           </div>
-
-          <div>
+          <span className={styles.trajectoryArrow}>→</span>
+          <div className={styles.trajectoryItem}>
             <span>03</span>
-            <strong>MediInsight</strong>
-            <p>
-              A data and intelligence layer designed to help transform
-              healthcare information into useful insights.
-            </p>
-            <small>HEALTH INTELLIGENCE</small>
+            <strong>Machine Learning</strong>
+            <p>Learning from data.</p>
           </div>
-
-          <div>
+          <span className={styles.trajectoryArrow}>→</span>
+          <div className={styles.trajectoryItem}>
             <span>04</span>
-            <strong>LabFlow</strong>
-            <p>
-              Connecting laboratory workflows, diagnostic information,
-              results, and downstream healthcare processes.
-            </p>
-            <small>LABORATORY SYSTEMS</small>
+            <strong>Software</strong>
+            <p>Turning ideas into tools.</p>
           </div>
-
-          <div>
+          <span className={styles.trajectoryArrow}>→</span>
+          <div className={styles.trajectoryItem}>
             <span>05</span>
-            <strong>CareConnect</strong>
-            <p>
-              Connecting patients, providers, caregivers, and healthcare
-              services across the care journey.
-            </p>
-            <small>CARE COORDINATION</small>
+            <strong>Intelligent Systems</strong>
+            <p>Building beyond isolated models.</p>
+          </div>
+          <span className={styles.trajectoryArrow}>→</span>
+          <div className={`${styles.trajectoryItem} ${styles.unknown}`}>
+            <span>06</span>
+            <strong>Health Technology</strong>
+            <p>The next frontier.</p>
+          </div>
+        </div>
+
+        <div className={styles.journeyBottom}>
+          <p>Still learning. Still building.</p>
+          <span>The journey is not finished.</span>
+        </div>
+      </section>
+
+      <section id="work" className={styles.work}>
+        <div className={styles.sectionLabel}>
+          <span>02 / SELECTED WORK</span>
+          <span>EXPERIMENTS → EVIDENCE → APPLICATION</span>
+        </div>
+
+        <div className={styles.workIntro}>
+          <h2>
+            Work that
+            <br />
+            makes ideas
+            <br />
+            tangible.
+          </h2>
+          <p className={styles.workStatement}>
+            Projects are where concepts meet real data, where assumptions are
+            tested, and where I learn what it takes to move from a notebook to
+            something another person can use.
+          </p>
+        </div>
+
+        <div className={styles.projectList}>
+          {projects.map((project) => (
+            <Link
+              href={project.href}
+              className={styles.project}
+              key={project.number}
+            >
+              <span className={styles.projectNumber}>{project.number}</span>
+
+              <div className={styles.projectMain}>
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+              </div>
+
+              <span className={styles.projectMeta}>{project.category}</span>
+              <span className={styles.projectArrow}>↗</span>
+            </Link>
+          ))}
+        </div>
+
+        <div className={styles.workFooter}>
+          <span>SELECTED PROJECTS</span>
+          <Link href="/work">
+            Explore all work <span>↗</span>
+          </Link>
+        </div>
+      </section>
+
+      <section id="about" className={styles.about}>
+        <div className={styles.sectionLabel}>
+          <span>03 / ABOUT</span>
+          <span>THE PERSON BEHIND THE WORK</span>
+        </div>
+
+        <div className={styles.aboutContent}>
+          <div className={styles.aboutIntro}>
+            <h2>
+              Curious by
+              <br />
+              nature.
+              <br />
+              Building with
+              <br />
+              intention.
+            </h2>
+
+            <div className={styles.aboutIdentity}>
+              <span>BANGALY SANO</span>
+              <p>Data Scientist · AI & Machine Learning</p>
+            </div>
           </div>
 
-          <div>
-            <span>06</span>
-            <strong>PredictCare AI</strong>
+          <div className={styles.aboutText}>
             <p>
-              Intelligent models designed to explore risk prediction,
-              pattern detection, and decision-support capabilities.
+              I am a data science and technology practitioner with a
+              background in biology and an ongoing interest in how intelligent
+              systems can solve meaningful problems.
             </p>
-            <small>PREDICTIVE INTELLIGENCE</small>
+            <p>
+              I work across data analysis, machine learning, predictive
+              modelling, and software development. I am particularly interested
+              in connecting these disciplines to practical challenges in
+              healthcare and the wider African technology ecosystem.
+            </p>
+            <p>
+              I do not see the work as a collection of finished projects.
+              Each project is part of a longer process of learning, testing,
+              refining, and building with greater purpose.
+            </p>
+
+            <div className={styles.aboutNow}>
+              <p className={styles.eyebrow}>CURRENT DIRECTION</p>
+              <p>
+                From biological systems to data-driven decisions, and from
+                individual models to useful technology.
+              </p>
+            </div>
+
+            <div className={styles.aboutBottom}>
+              <span>Research mindset.</span>
+              <span>Builder mentality.</span>
+              <span>Long-term thinking.</span>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* INTELLIGENCE */}
-      <section id="intelligence" className={styles.intelligence}>
+      <section id="gueritech" className={styles.gueritech}>
         <div className={styles.sectionLabel}>
-          <span>04</span>
-          <span>INTELLIGENCE LAYER</span>
+          <span>04 / GUERITECH</span>
+          <span>AN INITIATIVE IN PROGRESS</span>
         </div>
 
-        <div className={styles.intelligenceIntro}>
-          <div>
-            <p className={styles.eyebrow}>FROM DATA TO DECISIONS</p>
-
+        <div className={styles.gueritechContent}>
+          <div className={styles.gueritechIntro}>
+            <p className={styles.eyebrow}>BEYOND INDIVIDUAL PROJECTS</p>
             <h2>
-              Intelligence should
+              From building
               <br />
-              sit across the system.
+              models to building
+              <br />
+              systems.
             </h2>
           </div>
 
-          <p>
-            GueriTech&apos;s intelligence layer is envisioned as a shared
-            capability rather than a single product — allowing analytics,
-            machine learning, prediction, and decision support to operate
-            across the ecosystem.
-          </p>
-        </div>
-
-        <div className={styles.intelligenceGrid}>
-          <div>
-            <span>01</span>
-            <strong>Data Intelligence</strong>
+          <div className={styles.gueritechText}>
             <p>
-              Transforming structured and operational data into meaningful
-              signals.
+              GueriTech is where the different parts of the journey begin to
+              converge: technology, intelligence, software, and health.
             </p>
-          </div>
-
-          <div>
-            <span>02</span>
-            <strong>Predictive Models</strong>
             <p>
-              Exploring risk, forecasting, classification, and early-warning
-              capabilities.
+              The ambition is to build useful systems that address real
+              problems and contribute to a healthier technological future,
+              with African needs and opportunities in view.
             </p>
-          </div>
 
-          <div>
-            <span>03</span>
-            <strong>Decision Support</strong>
-            <p>
-              Presenting useful intelligence to the people making healthcare
-              decisions.
-            </p>
-          </div>
-
-          <div>
-            <span>04</span>
-            <strong>Personalization</strong>
-            <p>
-              Adapting experiences and recommendations around individual
-              healthcare contexts.
-            </p>
+            <Link href="/gueritech" className={styles.gueritechLink}>
+              <span>Explore what I&apos;m building</span>
+              <span>↗</span>
+            </Link>
           </div>
         </div>
 
-        <div className={styles.intelligenceFlow}>
-          <span>DATA</span>
-          <b>→</b>
-          <span>MODELS</span>
-          <b>→</b>
-          <span>INSIGHT</span>
-          <b>→</b>
-          <span>ACTION</span>
-        </div>
-      </section>
-
-      {/* OPERATIONS */}
-      <section id="operations" className={styles.operations}>
-        <div className={styles.sectionLabel}>
-          <span>05</span>
-          <span>OPERATIONS</span>
-        </div>
-
-        <div className={styles.operationsIntro}>
-          <p className={styles.eyebrow}>BEYOND THE APPLICATION</p>
-
-          <h2>
-            Systems need
-            <br />
-            infrastructure behind them.
-          </h2>
-
-          <p>
-            The platform is designed around the operational realities that
-            make healthcare technology usable at scale.
-          </p>
-        </div>
-
-        <div className={styles.operationsGrid}>
-          <div>
-            <span>01</span>
-            <strong>Organizations</strong>
-            <p>
-              Hospitals, clinics, laboratories, rehabilitation centers,
-              insurers, and other healthcare organizations.
-            </p>
-          </div>
-
-          <div>
-            <span>02</span>
-            <strong>Workflows</strong>
-            <p>
-              Designing systems around how healthcare teams actually work.
-            </p>
-          </div>
-
-          <div>
-            <span>03</span>
-            <strong>Access</strong>
-            <p>
-              Role-based access and organization-aware platform experiences.
-            </p>
-          </div>
-
-          <div>
-            <span>04</span>
-            <strong>Monitoring</strong>
-            <p>
-              Observability, reliability, system health, and operational
-              visibility.
-            </p>
-          </div>
-
-          <div>
-            <span>05</span>
-            <strong>Security</strong>
-            <p>
-              Building privacy, authentication, authorization, and auditability
-              into the infrastructure.
-            </p>
-          </div>
-
-          <div>
-            <span>06</span>
-            <strong>Scalability</strong>
-            <p>
-              Designing the architecture to evolve from focused pilots into
-              broader healthcare ecosystems.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* HEALTH ECOSYSTEM */}
-      <section id="ecosystem" className={styles.ecosystem}>
-        <div className={styles.sectionLabel}>
-          <span>06</span>
-          <span>HEALTH ECOSYSTEM</span>
-        </div>
-
-        <div className={styles.ecosystemIntro}>
-          <div>
-            <p className={styles.eyebrow}>THE BIGGER PICTURE</p>
-
-            <h2>
-              The platform becomes
-              <br />
-              more valuable when
-              <br />
-              the ecosystem connects.
-            </h2>
-          </div>
-
-          <p>
-            The long-term vision is a connected health technology ecosystem
-            where different participants can interact through shared
-            infrastructure, data, intelligence, and services.
-          </p>
-        </div>
-
-        <div className={styles.ecosystemMap}>
-          <div className={styles.ecosystemCenter}>
-            <span>GUERITECH</span>
-            <strong>HEALTH PLATFORM</strong>
-          </div>
-
-          <div className={styles.ecosystemNode}>
-            <strong>Patients</strong>
-            <span>Care · Access · Engagement</span>
-          </div>
-
-          <div className={styles.ecosystemNode}>
-            <strong>Providers</strong>
-            <span>Clinical · Rehabilitation · Care</span>
-          </div>
-
-          <div className={styles.ecosystemNode}>
-            <strong>Laboratories</strong>
-            <span>Diagnostics · Results · Data</span>
-          </div>
-
-          <div className={styles.ecosystemNode}>
-            <strong>Insurers</strong>
-            <span>Coverage · Risk · Operations</span>
-          </div>
-
-          <div className={styles.ecosystemNode}>
-            <strong>Pharmacies</strong>
-            <span>Medication · Distribution · Services</span>
-          </div>
-
-          <div className={styles.ecosystemNode}>
-            <strong>Partners</strong>
-            <span>Technology · Research · Infrastructure</span>
-          </div>
-        </div>
-
-        <div className={styles.ecosystemStatement}>
-          <span>THE DIRECTION</span>
-
-          <p>
-            Connect the infrastructure.
-            <br />
-            Understand the data.
-            <br />
-            Build the intelligence.
-            <br />
-            Improve the system.
-          </p>
-        </div>
-      </section>
-
-      {/* FUTURE */}
-      <section className={styles.future}>
-        <div className={styles.sectionLabel}>
-          <span>07</span>
-          <span>THE FUTURE</span>
-        </div>
-
-        <div className={styles.futureContent}>
-          <p className={styles.eyebrow}>STILL BEING BUILT</p>
-
-          <h2>
-            This is not
-            <br />
-            a finished company.
-          </h2>
-
-          <p>
-            GueriTech is an evolving direction — starting with focused
-            healthcare systems and gradually exploring what becomes possible
-            when infrastructure, intelligence, and healthcare are designed
-            together.
-          </p>
-        </div>
-      </section>
-
-      {/* FOOTER */}
-      <footer className={styles.footer}>
-        <Link href="/">← Back to portfolio</Link>
-
-        <div>
+        <div className={styles.gueritechStatement}>
           <span>GUERITECH</span>
-          <span>ENGINEERING A HEALTHIER FUTURE.</span>
+          <p>Engineering a healthier future.</p>
+        </div>
+      </section>
+
+      <section id="contact" className={styles.contact}>
+        <div className={styles.sectionLabel}>
+          <span>05 / CONTACT</span>
+          <span>OPEN TO MEANINGFUL CONNECTIONS</span>
         </div>
 
-        <span>Still building.</span>
+        <div className={styles.contactContent}>
+          <div className={styles.contactMain}>
+            <p className={styles.eyebrow}>HAVE SOMETHING IN MIND?</p>
+            <h2>
+              Let&apos;s make
+              <br />
+              something
+              <br />
+              meaningful.
+            </h2>
+
+            <a
+              className={styles.contactEmail}
+              href="mailto:sanobangaly@hotmail.com"
+            >
+              <span>sanobangaly@hotmail.com</span>
+              <span>↗</span>
+            </a>
+          </div>
+
+          <div className={styles.contactBottom}>
+            <p className={styles.contactNote}>
+              For thoughtful conversations, collaborations, and opportunities
+              to build useful things.
+            </p>
+
+            <div className={styles.contactLinks}>
+              <a
+                href="https://github.com/Bangaly-DS"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub ↗
+              </a>
+              <a
+                href="https://linkedin.com/in/sano-bangaly-064535146"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn ↗
+              </a>
+              <a
+                href="https://youtube.com/@gueritech"
+                target="_blank"
+                rel="noreferrer"
+              >
+                YouTube ↗
+              </a>
+              <Link href="/gueritech">GueriTech ↗</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer className={styles.footer}>
+        <span>© {new Date().getFullYear()} BANGALY SANO</span>
+        <span>DATA · INTELLIGENCE · TECHNOLOGY · HEALTH</span>
+        <a href="#top">
+          BACK TO TOP ↑
+        </a>
       </footer>
     </main>
   );
