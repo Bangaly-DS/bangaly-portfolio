@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./page.module.css";
@@ -83,7 +84,7 @@ export default function Home() {
 
       <section id="journey" className={styles.journey}>
         <div className={styles.sectionLabel}>
-          <span>01 / JOURNEY</span>
+          <span>JOURNEY</span>
           <span>THE PATH SO FAR</span>
         </div>
 
@@ -116,30 +117,35 @@ export default function Home() {
             <p>Understanding living systems.</p>
           </div>
           <span className={styles.trajectoryArrow}>→</span>
+
           <div className={styles.trajectoryItem}>
             <span>02</span>
             <strong>Data</strong>
             <p>Finding patterns in evidence.</p>
           </div>
           <span className={styles.trajectoryArrow}>→</span>
+
           <div className={styles.trajectoryItem}>
             <span>03</span>
             <strong>Machine Learning</strong>
             <p>Learning from data.</p>
           </div>
           <span className={styles.trajectoryArrow}>→</span>
+
           <div className={styles.trajectoryItem}>
             <span>04</span>
             <strong>Software</strong>
             <p>Turning ideas into tools.</p>
           </div>
           <span className={styles.trajectoryArrow}>→</span>
+
           <div className={styles.trajectoryItem}>
             <span>05</span>
             <strong>Intelligent Systems</strong>
             <p>Building beyond isolated models.</p>
           </div>
           <span className={styles.trajectoryArrow}>→</span>
+
           <div className={`${styles.trajectoryItem} ${styles.unknown}`}>
             <span>06</span>
             <strong>Health Technology</strong>
@@ -155,7 +161,7 @@ export default function Home() {
 
       <section id="work" className={styles.work}>
         <div className={styles.sectionLabel}>
-          <span>02 / SELECTED WORK</span>
+          <span>SELECTED WORK</span>
           <span>EXPERIMENTS → EVIDENCE → APPLICATION</span>
         </div>
 
@@ -204,7 +210,7 @@ export default function Home() {
 
       <section id="about" className={styles.about}>
         <div className={styles.sectionLabel}>
-          <span>03 / ABOUT</span>
+          <span>ABOUT</span>
           <span>THE PERSON BEHIND THE WORK</span>
         </div>
 
@@ -222,6 +228,11 @@ export default function Home() {
               />
             </div>
 
+            <div className={styles.aboutIdentity}>
+              <h3>BANGALY SANO</h3>
+              <p>Data Scientist · AI &amp; Machine Learning</p>
+            </div>
+
             <h2>
               Curious by
               <br />
@@ -231,11 +242,6 @@ export default function Home() {
               <br />
               intention.
             </h2>
-
-            <div className={styles.aboutIdentity}>
-              <span>BANGALY SANO</span>
-              <p>Data Scientist · AI &amp; Machine Learning</p>
-            </div>
           </div>
 
           <div className={styles.aboutText}>
@@ -279,21 +285,21 @@ export default function Home() {
 
       <section id="gueritech" className={styles.gueritech}>
         <div className={styles.sectionLabel}>
-          <span>04 / GUERITECH</span>
+          <span>GUERITECH</span>
           <span>AN INITIATIVE IN PROGRESS</span>
         </div>
 
         <div className={styles.gueritechContent}>
           <div className={styles.gueritechIntro}>
-          <p className={styles.eyebrow}>BEYOND INDIVIDUAL PROJECTS</p>
-          <h2>
-            From building
-            <br />
-            models to building
-            <br />
-            systems.
-          </h2>
-        </div>
+            <p className={styles.eyebrow}>BEYOND INDIVIDUAL PROJECTS</p>
+            <h2>
+              From building
+              <br />
+              models to building
+              <br />
+              systems.
+            </h2>
+          </div>
 
           <div className={styles.gueritechText}>
             <p>
@@ -321,7 +327,7 @@ export default function Home() {
 
       <section id="contact" className={styles.contact}>
         <div className={styles.sectionLabel}>
-          <span>05 / CONTACT</span>
+          <span>CONTACT</span>
           <span>OPEN TO MEANINGFUL CONNECTIONS</span>
         </div>
 
